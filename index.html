@@ -23,6 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <script defer src="js/menu.js" charset="utf-8"></script>    
   </head>
   <body>
     <header class="encabezado">
@@ -31,7 +32,13 @@
           <img id="iavatar" src="img/avatarRI.jpg" alt="Web Developer" height="50" width="50">
           <img src="img/reibanez.svg" alt="logoRibanez" height="50" width="50">
         </a>
+        <button type="button" class="open-menu" aria-label="Abrir Menu">
+          <box-icon name='menu'><img src="img/bx-menu.svg" alt="iconoMenu"></box-icon>
+        </button>
         <ul class="menu">
+          <button type="button" class="close-menu" aria-label="Cerrar Menu">
+            <box-icon name='x-circle'><img src="img/bx-x-circle.svg" alt="iconoMenu"></box-icon>
+          </button>
           <li><a href="#profile">Perfil</a></li>
           <li><a href="#experience">Experiencia</a></li>
           <li><a href="#skills">Habilidades</a></li>
@@ -39,5 +46,8 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <h1>Raul Ibañez M.</h1>
+    </main>
   </body>
 </html>

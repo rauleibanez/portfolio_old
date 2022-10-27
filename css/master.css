@@ -12,12 +12,14 @@
  * ==================================
 */
 :root{
+  --dark-color:#000000;
+  --neutral-color: #ffffff;
   --theme-color: #f6f5e4;
   --primary-color:#0c3d75;
   --secondary-color:#f7d74c;
   --text-color-inverse:#f4f4d9;
   --text-color:#2a366b;
-  --navbar-shallow-color:#fdda7c;
+  --navbar-shallow-color:#4b4b48;
   --menu-mobile-background-color:#2f5075;
 }
 /*--------------ESTILOS GENERALES-----------*/
@@ -29,5 +31,4 @@ body{
 /*------------ESTILOS DE LOS LINKS----------*/
 a {
   text-decoration: none;
-  color: var(--text-color);
 }

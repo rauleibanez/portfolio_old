@@ -13,11 +13,20 @@
 */
 /*-------------HEADER------------------*/
 .encabezado{
+  box-shadow: 0 4px 5px var(--navbar-shallow-color);
+  background-color: var(--neutral-color);
+  position:fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 /*------------NAV BAR------------------*/
 .barramenu{
   display: flex;
   justify-content: space-between;
+  padding: 10px;
+  max-width: 980px;
+  margin: 0 auto;
 }
 /*--------------LOGO-------------------*/
 .logo{
@@ -27,8 +36,68 @@
 .logo > #iavatar{
   border-radius: 50%;
 }
-/*-----------------*/
+/*---------------OPCIONES DEL MENU-------*/
 .menu{
   display:flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li{
+  padding:0 15px;
+}
+.menu a{
+  color: var(--dark-color);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+/*-----------BOTONES DEL MENU RESPONSIVO-----*/
+.open-menu, .close-menu{
+  display:none;
+}
+/*--------MEDIA QUERY PARA TELEFONOS----------*/
+@media (max-width:950px){
+  .menu{
+    flex-direction: column;
+    position:fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    align-items: center;
+    background-color: var(--menu-mobile-background-color);
+    height: 100%;
+    /* ESTO ES PARA QUE COLOQUE UN SCROLL EN PANTALLAS MUY PEQUEÑAS*/
+    overflow-y: auto;
+    /*ACA SE OCULTA EL MENU*/
+    opacity: 0;
+    /*ACA SE DESACTIVAN TODOS LOS BOTONES DEL MENU*/
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+  .menu a{
+    color: var(--text-color-inverse);
+      line-height: 60px;
+  }
+  .menu li{
+    padding:0;
+  }
+  /*-----------BOTONES DEL MENU RESPONSIVO-----*/
+  .open-menu,
+  .close-menu{
+    display:block;
+    border: none;
+    background: none;
+    cursor:pointer;
+  }
+  .close-menu{
+    align-self: flex-end;
+    padding: 20px 15px;
 
+  }
+  .menu_opened{
+    opacity: 1;
+    pointer-events: all;
+  }
 }
