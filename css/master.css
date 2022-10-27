@@ -1,0 +1,33 @@
+/*
+ * ==================================
+ * Archivo    : master.css;
+ * Descripcion: Archivo  de  estilos
+                principal de la  pagina
+                principal (index.html);
+ * Autor      : Raul Ibañez;
+ * Version    : 1.0;
+ * Fecha      : 26/10/2022;
+ * Observacion: Implementacion de FlexBox
+                CSS y Media Queries
+ * ==================================
+*/
+:root{
+  --theme-color: #f6f5e4;
+  --primary-color:#0c3d75;
+  --secondary-color:#f7d74c;
+  --text-color-inverse:#f4f4d9;
+  --text-color:#2a366b;
+  --navbar-shallow-color:#fdda7c;
+  --menu-mobile-background-color:#2f5075;
+}
+/*--------------ESTILOS GENERALES-----------*/
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--theme-color);
+  color: var(--text-color);
+}
+/*------------ESTILOS DE LOS LINKS----------*/
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
