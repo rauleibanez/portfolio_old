@@ -20,10 +20,13 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/skills.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-    <script defer src="js/menu.js" charset="utf-8"></script>    
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <script defer src="js/menu.js" charset="utf-8"></script>
   </head>
   <body>
     <header class="encabezado">
@@ -47,7 +50,32 @@
       </nav>
     </header>
     <main>
-      <h1>Raul Ibañez M.</h1>
+      <!--SECCION DEL PERFIL-->
+      <div class="horizontal-padding vertical-padding">
+      <section class="profile">
+        <article class="profile-info">
+          <h1 class="profile-title">Raúl Ibáñez M.</h1>
+          <p class="profile-details">Especialista en Soporte Técnico, Administración de Servidores Windows / Linux y Desarrollo de sitios para ambiente Web con html5, ccs3 y JavaScript.</p>
+          <button type="button" name="button" class="profile-btn">Descargar HV</button>
+        </article>
+        <article class="profile-img-section">
+          <img  class="profile-img" src="img/perfilraul.jpg" alt="Desarrollador">
+        </article>
+      </section>
+      </div>
+      <!--SECCION DEL HABILIDADES-->
+      <div class="horizontal-padding vertical-padding">
+        <section class="skills">
+          <h2 class="skills-title">Habilidades</h2>
+          <ul class="skills-list">
+            <li class="skills-skill">CSS</li>
+            <li class="skills-skill">HTML</li>
+            <li class="skills-skill">JavaScript</li>
+            <li class="skills-skill">Python</li>
+            <li class="skills-skill">Java</li>
+          </ul>
+        </section>
+      </div>
     </main>
   </body>
 </html>

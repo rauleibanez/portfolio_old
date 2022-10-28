@@ -1,0 +1,78 @@
+/*
+ * ==================================
+ * Archivo    : profile.css;
+ * Descripcion: Archivo de estilos de
+                la seccion del perfil
+                profesional (index.html);
+ * Autor      : Raul Ibañez;
+ * Version    : 1.0;
+ * Fecha      : 27/10/2022;
+ * Observacion: Diseño Mobile First;
+ * ==================================
+*/
+.profile{
+  text-align:center;
+}
+.profile-title{
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+.profile-details{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3;
+  max-width: 450px;
+  margin: 20px auto;
+}
+.profile-info{
+  margin-bottom: 25px;
+}
+.profile-img-section{
+}
+.profile-img{
+  width: 80%;
+  max-width: 350px;
+  border-radius: 50%;
+}
+.profile-btn{
+  background-color: var(--primary-color);
+  color: var(--text-color-inverse);
+  border: none;
+  font-size: 20px;
+  padding:0.5em 1em;
+  border-radius: 7px;
+  cursor:pointer;
+}
+.profile-btn:hover{
+  filter:brightness(150%);
+}
+/*--------MEDIA QUERY PARA ESCRITORIO----------*/
+@media (min-width:950px){
+  .profile{
+    display:flex;
+    text-align: left;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  .profile-info{
+    margin-bottom: 0;
+  }
+  .profile-img{
+    width: 100%;
+    max-width: 350px;
+    transform: scalex(-1);
+  }
+  .profile-title{
+    font-size: 60px;
+    color: var(--text-color);
+  }
+  .profile-details{
+    font-size: 25px;
+    margin 30px 0;
+  }
+  .profile-btn{
+    font-size: 28px;
+  }
+}

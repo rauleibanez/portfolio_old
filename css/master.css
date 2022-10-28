@@ -12,23 +12,43 @@
  * ==================================
 */
 :root{
-  --dark-color:#000000;
-  --neutral-color: #ffffff;
-  --theme-color: #f6f5e4;
-  --primary-color:#0c3d75;
-  --secondary-color:#f7d74c;
-  --text-color-inverse:#f4f4d9;
-  --text-color:#2a366b;
-  --navbar-shallow-color:#4b4b48;
-  --menu-mobile-background-color:#2f5075;
+  --dark-color:#000000;                   /* Color Negro Puro       */
+  --neutral-color: #ffffff;               /* Color Blanco Puro      */
+  --theme-color: #f6f5e4;                 /* Color Blanco Hueso     */
+  --primary-color:#0c3d75;                /* Color Azul Petroleo    */
+  --secondary-color:#f7d74c;              /* Color Amarillito Claro */
+  --text-color-inverse:#f4f4d9;           /* Color Cremita          */
+  --text-color:#2a366b;                   /* Color Azul Dark        */
+  --navbar-shallow-color:#4b4b48;         /* Color Gris Humo        */
+  --menu-mobile-background-color:#2f5075; /* Color Azul Grisaceo    */
 }
 /*--------------ESTILOS GENERALES-----------*/
 body{
   font-family: 'Montserrat', sans-serif;
   background-color: var(--theme-color);
   color: var(--text-color);
+  padding-top:70px;
 }
 /*------------ESTILOS DE LOS LINKS----------*/
 a {
   text-decoration: none;
+}
+.horizontal-padding{
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.vertical-padding{
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+/*------------MEDIA QUERY PARA ESCRITORIO----------*/
+@media (min-width: 950px){
+  .horizontal-padding{
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .vertical-padding{
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
 }
