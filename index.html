@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/experiences.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
@@ -50,12 +52,12 @@
       </nav>
     </header>
     <main>
-      <!--SECCION DEL PERFIL-->
       <div class="horizontal-padding vertical-padding">
-      <section class="profile">
+      <!--SECCION DEL PERFIL-->
+      <section class="profile selected" id="profile">
         <article class="profile-info">
           <h1 class="profile-title">Raúl Ibáñez M.</h1>
-          <p class="profile-details">Especialista en Soporte Técnico, Administración de Servidores Windows / Linux y Desarrollo de sitios para ambiente Web con html5, ccs3 y JavaScript.</p>
+          <p class="profile-details">Especialista en Soporte Técnico, Administración de Servidores Windows / Linux y Desarrollo FrontEnd de sitios Web.</p>
           <button type="button" name="button" class="profile-btn">Descargar HV</button>
         </article>
         <article class="profile-img-section">
@@ -63,9 +65,54 @@
         </article>
       </section>
       </div>
+      <!--SECCION DEL EXPERIENCIA-->
+      <section class="experiences" id="experience">
+        <img src="img/wave.svg" alt="divisor" class="wave">
+        <div class="experiences-body">
+          <h2 class="experiences-title">Experiencia</h2>
+          <!--GRID DE EXPERIENCIAS-->
+          <div class="experiences-grid">
+            <!--FICHA VACIA-->
+            <div class="empty"></div>
+            <!--LINEA SEPARADORA -->
+            <div class="line"></div>
+            <!--FICHA DE EXPERIENCIA-->
+            <div class="experience">
+              <div class="experience-day">2018-2021</div>
+              <div class="experience-company"></div>
+              <div class="experience-position">Asesor Técnico Independiente.</div>
+              <div class="experience-description">Diseño y Desarrollo de Marca Personal en Redes Sociales y Desarrollo FrontEnd de Sitios Web.</div>
+            </div>
+            <!--FICHA DE EXPERIENCIA-->
+            <div class="experience">
+              <div class="experience-day">2016-2018</div>
+              <div class="experience-company">Prokingca</div>
+              <div class="experience-position">Especialista de Soporte Técnico.</div>
+              <div class="experience-description">Administrador de Servidores, Soporte Técnico Nivel II Services Desk  .</div>
+            </div>
+            <!--LINEA SEPARADORA -->
+            <div class="line"></div>
+            <!--FICHA VACIA-->
+            <div class="empty"></div>
+            <!--FICHA VACIA-->
+            <div class="empty"></div>
+            <!--LINEA SEPARADORA -->
+            <div class="line"></div>
+            <!--FICHA DE EXPERIENCIA-->
+            <div class="experience">
+              <div class="experience-day">2013-2016</div>
+              <div class="experience-company">Soda Phone</div>
+              <div class="experience-position">Técnico Especialista.</div>
+              <div class="experience-description">Especialista en Reparación de Teléfonos Móviles, Tablets y Dispositivos Multimedia.</div>
+            </div>
+            <!--FIN DEL GRID EXPERIENCIA-->
+          </div>
+        </div>
+        <img src="img/wave.svg" alt="divisor" class="wave wave-bottom">
+      </section>
       <!--SECCION DEL HABILIDADES-->
       <div class="horizontal-padding vertical-padding">
-        <section class="skills">
+        <section class="skills" id="skills">
           <h2 class="skills-title">Habilidades</h2>
           <ul class="skills-list">
             <li class="skills-skill">CSS</li>
@@ -75,6 +122,47 @@
             <li class="skills-skill">Java</li>
           </ul>
         </section>
+      </div>
+      <!--SECCION DE CONTACTO-->
+      <div class="horizontal-padding vertical-padding">
+      <section class="contact" id="contact">
+        <div class="contact-details">
+          <h2 class="contact-title">Contacto</h2>
+          <div class="contact-details-group">
+            <p class="contact-label">Ubicación:</p>
+            <p class="contact-text">Colombia</p>
+          </div>
+          <div class="contact-details-group">
+            <p class="contact-label">e-mail:</p>
+            <p class="contact-text">ribanez@outlook.com</p>
+          </div>
+          <div class="contact-details-group">
+            <p class="contact-text">Deje su mensaje, con gusto le responderé.</p>
+          </div>
+          <form class="contact-form" action="" method="post">
+            <div class="contact-form-group">
+              <label for="name">Nombre</label>
+              <input type="text" name="name" value="" id="name" required>
+            </div>
+            <div class="contact-form-group">
+              <label for="email">e-mail</label>
+              <input type="email" name="email" value="" id="email" required>
+            </div>
+            <div class="contact-form-group">
+              <label for="message">Mensaje</label>
+              <textarea required name="message" id="message" rows="6" ></textarea>
+            </div>
+            <button type="submit" name="button" class="contact-form-submit">Enviar</button>
+          </form>
+          <nav class="social">
+            <ul class="social-list">
+              <li><a href="#"><img src="img/twitter.svg" alt="twitter profile"></a></li>
+              <li><a href="#"><img src="img/github.svg" alt="github profile"></a></li>
+              <li><a href="#"><img src="img/linkedin.svg" alt="linkedin profile"></a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
       </div>
     </main>
   </body>

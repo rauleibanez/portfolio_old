@@ -1,0 +1,143 @@
+/*
+ * ==================================
+ * Archivo    : experiences.css;
+ * Descripcion: Archivo  de  estilos
+                de la seccion de
+                experiencias;
+ * Autor      : Raul Ibañez;
+ * Version    : 1.0;
+ * Fecha      : 28/10/2022;
+ * Observacion: Implementacion de CSS GRID
+                y Media Query
+ * ==================================
+*/
+.experiences{
+  display: flex;
+  flex-direction: column;
+}
+.experiences-body{
+  background-color: var(--primary-color);
+  color: var(--text-color-inverse);
+}
+.experiences-title{
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 25px;
+}
+.experience-day{
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+.experience-company{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 5px;
+  color: var(--neutral-color);
+}
+.experience-position{
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.experience-description{
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 10px;
+  color: var(--neutral-color);
+}
+.experience{
+  padding:25px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.wave{
+  width: 100%;
+  position: relative;
+  top: 2px;
+}
+.wave-bottom{
+  transform: scaleY(-1);
+  top:-2px;
+}
+/*--------MEDIA QUERY PARA ESCRITORIO--------*/
+@media (min-width: 950px){
+  .experiences{
+    display: flex;
+    flex-direction: column;
+  }
+  .experience{
+    padding:0;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .experiences-body{
+    background-color: var(--primary-color);
+    color: var(--text-color-inverse);
+  }
+  .experiences-title{
+    font-size: 50px;
+  }
+  .experience-day{
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
+  .experience-company{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 5px;
+    color: var(--neutral-color);
+  }
+  .experience-position{
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .experience-description{
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+    color: var(--neutral-color);
+  }
+  .wave{
+    width: 100%;
+    position: relative;
+    top: 2px;
+  }
+  .wave-bottom{
+    transform: scaleY(-1);
+    top:-2px;
+  }
+  .experiences-grid{
+    display:grid;
+    grid-template-columns: auto 2px auto;
+    gap:20px;
+    padding:70px;
+    justify-content: center;
+    max-width: 980px;
+    margin:0 auto;
+  }
+  .line{
+    background-color: var(--neutral-color);
+    position:relative;
+  }
+  .line::before,
+  .line::after{
+    content:"";
+    display:block;
+    width: 20px;
+    height: 20px;
+    background-color: var(--neutral-color);
+    border-radius: 50%;
+    position:absolute;
+    top:-20px;
+    left:-9px;
+  }
+  .line::after{
+    top:100%;
+    z-index:1;
+  }
+}

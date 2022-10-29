@@ -22,6 +22,12 @@
   --navbar-shallow-color:#4b4b48;         /* Color Gris Humo        */
   --menu-mobile-background-color:#2f5075; /* Color Azul Grisaceo    */
 }
+html{
+  scroll-behavior: smooth;
+}
+section[id]{
+  scroll-margin-top:70px;
+}
 /*--------------ESTILOS GENERALES-----------*/
 body{
   font-family: 'Montserrat', sans-serif;
