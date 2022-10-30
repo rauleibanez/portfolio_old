@@ -74,9 +74,49 @@
   gap:25px;
   justify-content: center;
 }
+.social-list img{
+  height: 25px;
+}
+.social-list img:hover{
+  filter:drop-shadow(0 0 10px var(--secondary-color));
+}
 /*--------MEDIA QUERY PARA ESCRITORIO--------*/
 @media (min-width: 950px){
+  .contact{
+    font-size: 20px;
+    padding:70px;
+    max-width: 980px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
   .contact-title{
-    font-size: 50px;
+    font-size: 35px;
+    text-align: left;
+  }
+  .social-list{
+    justify-content: flex-start;
+  }
+  .social-list img{
+    height: 35px;
+  }
+  .contact-title{
+    grid-area: title;
+  }
+  .contact-details{
+    grid-area: details;
+  }
+  .contact-form{
+    grid-area: form;
+  }
+  .contact-social{
+    grid-area:social;
+  }
+  .contact{
+    grid:
+    "title   form" auto
+    "details form" 1fr
+    "social  form" auto /
+    1fr      1fr;
+    align-items: start; 
   }
 }
