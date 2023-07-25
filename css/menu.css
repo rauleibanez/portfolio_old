@@ -44,6 +44,7 @@
   margin: 0;
   padding: 0;
   z-index: 1;
+
 }
 .menu li{
   padding:0 15px;
@@ -57,8 +58,22 @@
   text-transform: uppercase;
   position:relative;
   z-index: 3;
+  /*--------------Subrayado del Hoover----*/
+  background-image:
+  linear-gradient(
+    transparent 0%,
+    transparent 90%,
+    hotpink 90%,
+    hotpink 100%
+    );
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+  transition: background-size 300ms;
 }
-.menu a::after{
+.menu:hover {
+}
+/*.menu a::after{
   content: "";
   color: var(--secondary-color);
   position:absolute;
@@ -73,10 +88,11 @@
 .menu a.selected::after,
 .menu a:hover::after{
   opacity: 0.8;
-}
+}*/
 .menu a:hover{
-  color: var(--primary-color);
-
+  color: var(--secondary-color);
+  background-size: 100% 100%;
+  background-position-x: left;
 }
 /*-----------BOTONES DEL MENU RESPONSIVO-----*/
 .open-menu, .close-menu{
